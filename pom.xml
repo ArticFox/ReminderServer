@@ -12,6 +12,8 @@
         <javax.servlet-api.version>4.0.0-b01</javax.servlet-api.version>
         <spring-data-jpa.version>1.9.4.RELEASE</spring-data-jpa.version>
         <hibernate-core.version>5.1.0.Final</hibernate-core.version>
+        <postgresql.version>9.1-901-1.jdbc4</postgresql.version>
+        <commons-dbcp2.version>2.1.1</commons-dbcp2.version>
     </properties>
     <packaging>war</packaging>
 
@@ -49,6 +51,23 @@
             <version>${javax.servlet-api.version}</version>
         </dependency>
         <!-- SERVLET **END** -->
+
+        <!-- PostgresDB **BEGIN** -->
+        <dependency>
+            <groupId>postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>${postgresql.version}</version>
+        </dependency>
+        <!-- PostgresDB **END** -->
+
+        <!-- Apache DBCP **BEGIN** -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-dbcp2</artifactId>
+            <version>${commons-dbcp2.version}</version>
+        </dependency>
+        <!-- Apache DBCP **END** -->
+
 
     </dependencies>
 
