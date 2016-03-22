@@ -9,5 +9,4 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 @EnableWebMvc
 @ComponentScan("com.acore.reminderServer")
 public class WebConfig extends WebMvcConfigurerAdapter {
-
 }
